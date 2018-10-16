@@ -48,7 +48,7 @@ class Student
       WHERE grade < 12
     SQL
 
-    DB[:conn].execute(sql).to_s
+    DB[:conn].execute(sql)[0]
   end
 
   def save
